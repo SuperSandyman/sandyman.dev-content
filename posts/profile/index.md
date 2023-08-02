@@ -1,14 +1,16 @@
 ---
 title: プロフィール
-tags: ['プロフィール', 'ブログ']
-categories: ['ブログ']
-date: 2022-09-09T16:30:14+09:00
+tags: ["プロフィール", "ブログ"]
+categories: ["ブログ"]
+date: "2022-09-09"
 ---
 
 ## 名前の由来
-IntelのSandy Bridge世代のCPUを愛用していたから。SandyおじさんはあれなのでSandyマンになった。
+
+Intel の Sandy Bridge 世代の CPU を愛用していたから。Sandy おじさんはあれなので Sandy マンになった。
 
 ## 持ってるスキル
+
 - React（20%）
 - HTML/CSS（40%）
 - ブログ執筆（0%）~ブログやめろ~
