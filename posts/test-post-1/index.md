@@ -1,6 +1,7 @@
 ---
 title: "Hello, World!"
 date: "2023-09-03"
+emoji: "🚀"
 ---
 
 ## lorem ipsum
