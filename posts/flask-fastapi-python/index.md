@@ -3,7 +3,7 @@ title: "ChatGPTに記事書かせたらどうなるのかやってみた？（Fl
 tags: ["ChatGPT", "AI生成", "Python", "Flask"]
 categories: ["Python"]
 archive: ["2023/02"]
-date: 2023-02-15
+date: "2023-02-15"
 toc: true
 thumbnail: "images/monitor.webp"
 ---

@@ -2,7 +2,7 @@
 title: 【念願】ブログ引っ越したぞーー！！！
 tags: ['ブログ']
 categories: ['ブログ']
-date: 2022-09-09T16:30:14+09:00
+date: "2022-09-09"
 toc: true
 aliases: ["/blog-open"]
 ---

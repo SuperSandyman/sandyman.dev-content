@@ -1,5 +1,5 @@
 ---
-date: 2022-10-03
+date: "2022-10-03"
 title: "本当にAIでフェイクの画像を生成することができるのか？Pythonで試してみた！"
 thumbnail: "images/programming2.webp"
 tags: ["AI", "Python", "時事ネタ", "画像生成"]
