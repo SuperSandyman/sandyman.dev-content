@@ -1,8 +1,8 @@
 ---
 date: "2023-05-17"
 title: "【ドキュメント日本語訳】Next.js 13.4 App Router React Essentials"
-tags: ["", "", ""]
-categories: [""]
+tags: ["仮"]
+categories: ["仮"]
 archives: ["2023/05"]
 toc: true
 ---
