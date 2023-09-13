@@ -5,6 +5,7 @@ thumbnail: "images/cooldevelop.webp"
 tags: ["Python", "BeautifulSoup", "スクレイピング", "おすすめ"]
 categories: ["Python"]
 archives: ["2023/01"]
+emoji: "😍"
 description: "Pythonを使ったスクレイピングの手法について、実際の例なども交えながらわかりやすく解説。BeautifulSoupを使って初心者でも簡単にできる方法を紹介。"
 toc: true
 ---

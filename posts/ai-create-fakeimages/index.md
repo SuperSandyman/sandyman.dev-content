@@ -6,6 +6,7 @@ tags: ["AI", "Python", "時事ネタ", "画像生成"]
 categories: ["Python"]
 archives: ["2022/10"]
 aliases: ["/ai-create-fakeimages"]
+emoji: "📷"
 description: "近年話題になっているAIによるフェイク画像、実際に作ることはできるのか検証。Pythonを活用してAIを使ってみたという記事。"
 ---
 
