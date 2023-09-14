@@ -7,6 +7,7 @@ categories: ["Linux"]
 archives: ["2022/12"]
 toc: true
 aliases: ["/flatpak-chrome-install"]
+emoji: "🎁"
 ---
 
 ## はじめに

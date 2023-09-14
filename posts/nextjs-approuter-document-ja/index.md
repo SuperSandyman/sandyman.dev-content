@@ -5,6 +5,7 @@ tags: ["公式ドキュメント", "Next.js", "日本語訳"]
 categories: ["翻訳"]
 archives: ["2023/05"]
 toc: true
+emoji: "♨️"
 ---
 
 Next.js 13.4のApp Routerのドキュメントを日本語訳してみてます。翻訳にはDeepl翻訳などを使ってます。

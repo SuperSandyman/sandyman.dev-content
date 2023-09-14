@@ -5,6 +5,7 @@ tags: ["Docker", "Next.js", "NestJS"]
 categories: ["環境構築"]
 archives: ["2023/05"]
 toc: true
+emoji: "💡"
 ---
 
 皆さんこんにちは。Sandyマンです。今回は、「Docker×Next.js×NestJS×PostgreSQL」の環境構築をしていきます！ それではやっていきましょう！

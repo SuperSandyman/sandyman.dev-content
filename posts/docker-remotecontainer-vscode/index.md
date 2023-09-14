@@ -5,6 +5,7 @@ tags: ["VSCode", "Remotecontainer"]
 categories: ["VSCode"]
 archives: ["2023/05"]
 toc: true
+emoji: "⚡"
 ---
 
 皆さんこんにちは。Sandyマンです。今回は、今更ながらVSCodeのRemote Containerを軽く触っていこうと思います。それではやっていきます！

@@ -6,6 +6,7 @@ tags: ["Bulma", "CSS", "デザイン"]
 categories: ["CSS"]
 archives: ["2022/09"]
 aliases: ["/css-bulma-using"]
+emoji: "🖍️"
 ---
 
 ## はじめに

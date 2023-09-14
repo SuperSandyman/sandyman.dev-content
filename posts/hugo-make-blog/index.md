@@ -7,6 +7,7 @@ categories: ["Hugo"]
 archives: ["2022/09"]
 aliases: ["/hugo-make-blog"]
 toc: true
+emoji: "💲"
 ---
 
 皆さんこんにちは、Sandyマンです！

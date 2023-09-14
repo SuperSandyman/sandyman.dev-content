@@ -5,6 +5,7 @@ tags: ["公式ドキュメント", "翻訳", "Next.js"]
 categories: ["翻訳"]
 archives: ["2023/05"]
 toc: true
+emoji: "🤩"
 ---
 
 （コードはすべてTypeScriptです。Deeplなどで翻訳しました）

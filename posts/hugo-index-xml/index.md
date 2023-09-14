@@ -5,7 +5,8 @@ tags: ["Hugo", "ブログ", "SEO"]
 categories: ["Hugo"]
 draft: false
 archives: ["2023/04"]
-toc: false-
+toc: false
+emoji: "🥦"
 ---
 
 皆さんこんにちは。Sandyマンです。Hugoのindex.xmlに一部記事が登録されないようにしてみたので方法を残そうと思います。

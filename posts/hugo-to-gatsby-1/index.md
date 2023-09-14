@@ -5,6 +5,7 @@ tags: ["ブログ", "Hugo", "Gatsby"]
 categories: ["ブログ"]
 archives: ["2023/05"]
 toc: true
+emoji: "⚔️"
 ---
 
 皆さんこんにちは。Sandyマンです。今回は、HugoをやめてGatsbyでブログを作り直したくなったので、それについてやっていきます！！
