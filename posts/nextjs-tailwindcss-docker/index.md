@@ -4,6 +4,7 @@ title: "Next.js×DockerのときなぜかTailwind CSSが使えない"
 tags: ["Next.js", "Docker", "TailwindCSS"]
 categories: ["React"]
 archives: ["2023/05"]
+emoji: "🧪"
 toc: true
 ---
 
