@@ -4,6 +4,7 @@ tags: ['ブログ']
 categories: ['ブログ']
 date: "2022-09-09"
 toc: true
+emoji: "🚀"
 aliases: ["/blog-open"]
 ---
 

@@ -7,6 +7,7 @@ categories: ["Linux"]
 draft: false
 archives: ["2023/03"]
 toc: true
+emoji: "🐧"
 description: "Ubuntu系でLinuxカーネルをビルドしてみたときの手順等をまとめた記事です。カーネルのソースコードからビルドしました。"
 ---
 

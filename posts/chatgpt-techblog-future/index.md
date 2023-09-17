@@ -6,6 +6,7 @@ categories: ["ブログ"]
 draft: false
 archives: ["2023/04"]
 toc: true
+emoji: "⌨️"
 ---
 
 皆さんこんにちは。Sandyマンです。今回は、「ChatGPT登場後の技術ブログの未来」ということでやってみようかなと思います。それではやっていきます！
