@@ -29,10 +29,9 @@ def publish_post():
 
     target_directory = os.path.join("posts", slug)
     os.rename(post_directory, target_directory)
-
-    commit_message = input("コミットメッセージを入力してください: ")
+    
     subprocess.run(["git", "add", "."])
-    subprocess.run(["git", "commit", "-m", f'"{slug} {commit_message}"'])
+    subprocess.run(["git", "commit", "-m", f'"{slug} add"'])
     subprocess.run(["git", "push", "-u", "origin", "main"])
 
 def edit_post():

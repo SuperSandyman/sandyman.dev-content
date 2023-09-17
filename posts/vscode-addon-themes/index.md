@@ -6,6 +6,7 @@ tags: ["VSCode", "JavaScript"]
 categories: ["VSCode"]
 archives: ["2022/11"]
 aliases: ["/vscode-addon-themes"]
+emoji: "🙌"
 toc: true
 ---
 
