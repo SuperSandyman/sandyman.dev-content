@@ -19,7 +19,7 @@ description: "Ubuntu系でLinuxカーネルをビルドしてみたときの手�
 - ThinkPad X1Carbon Gen10
 
 ## 手順
-sources.list 内のdeb-srcをコメントアウトする。（#を外す）
+sources.list内のdeb-srcをコメントアウトする。（#を外す）
 
 下のコマンドを実行。
 ```bash
@@ -31,7 +31,7 @@ sudo apt install build-essential bison flex gnupg libncurses-dev libelf-dev libs
 
 解凍したフォルダに移動する。
 
-`cp /boot/config-$(uname -r) .config` を実行する。（今実行しているカーネルのコンフィグをコピーするコマンド）
+`cp /boot/config-$(uname -r) .config` を実行する。（今実行しているカーネルのconfigをコピーするコマンド）
 
 `make oldconfig` を実行しとにかくエンター！！！
 
