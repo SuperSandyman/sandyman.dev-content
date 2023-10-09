@@ -3,14 +3,14 @@ date: "2023-10-08"
 title: "Next.js (App Router) でNoto Sans JPを使いたい"
 tags: ["フォント", "Next.js", "App Router"]
 categories: ["Next.js"]
-emoji: ""
+emoji: "🐣"
 ---
 
 ## 概要
 Next.js (App Router) でNoto Sans JPを使うときの方法を忘れてしまったので自分用にメモしておきます。
 
 ## 方法
-```ts
+```ts showLineNumbers
 // 変更前のlayout.tsx
 import './globals.css'
 import type { Metadata } from 'next'
@@ -37,6 +37,7 @@ export default function RootLayout({
 ```
 これを下のようにする。
 ```ts {3, 5-9, 23} showLineNumbers
+// 変更後のlayout.tsx
 import "./globals.css";
 import type { Metadata } from "next";
 import { Noto_Sans_JP } from "next/font/google";
