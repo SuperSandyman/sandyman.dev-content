@@ -36,7 +36,7 @@ export default function RootLayout({
 }
 ```
 これを下のようにする。
-```ts {3, 5-9, 23} showLineNumbers
+```ts {4, 6-10, 24} showLineNumbers
 // 変更後のlayout.tsx
 import "./globals.css";
 import type { Metadata } from "next";
