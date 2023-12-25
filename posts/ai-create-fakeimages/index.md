@@ -49,7 +49,7 @@ images[0].save("output.png")
 
 Sandyマンも作ってみました！
 
-![](suigai.webp)
+![](./suigai.webp)
 
 まあまあですね！次はもう少しクオリティを高められるのか？やっていきます！
 
@@ -58,7 +58,7 @@ Sandyマンも作ってみました！
 
 例えば、「水害　豪雨　災害　山の町」と打つと「Flooding Heavy Rain Disaster Mountain Town」というわけわからないのが返ってきます。これをさっきのコードに通すと...。
 
-![](mountaintown.webp)
+![](./mountaintown.webp)
 
 こんなのが出てきました。反射などもかなりリアルにできています。さっきの画像よりもクオリティが上がりましたね。
 

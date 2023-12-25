@@ -46,7 +46,7 @@ root.mainloop()
 ```
 `python3 app.py`と打って実行すると...
 
-![](./tkinter_helloworld.webp)
+![](././tkinter_helloworld.webp)
 
 少し見た目が古風なウィンドウが出てきます。出てきたら成功です！
 
@@ -55,7 +55,7 @@ root.mainloop()
 
 最大化したい場合は、`root.attributes("-zoomed", "1")`を付け加えます。(LinuxやMacのみ)
 
-![](tkinter_zoomed.webp)
+![](./tkinter_zoomed.webp)
 
 するとこんな感じのバカでかいウィンドウが出てきます。
 

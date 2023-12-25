@@ -13,7 +13,7 @@ toc: true
 皆さんこんにちは！Sandyマンです！今回は、プログラマー御用達のエディタ「Visual Studio Code」（以下VSCode）のおすすめ拡張機能を紹介します！それではやっていきましょう！
 
 ## 1.indent-rainbow
-![](indent-rainbow.webp)
+![](./indent-rainbow.webp)
 
 画像のようにコードのインデントにわかりやすく色を付けてくれる拡張機能です！Sandyマン一押しの神拡張です！Pythonなどのインデントを多用する言語を使っている方におすすめです！
 
@@ -27,7 +27,7 @@ VSCodeのアイコンを今時なデザインにできる拡張機能（どっ�
 GitをGUIで扱えるようになる拡張機能です！編集履歴などが視覚化されてわかりやすくなるのでまあまあおすすめです。
 
 ## 5.Atom One Dark
-![](atom-one-dark.webp)
+![](./atom-one-dark.webp)
 
 VSCodeのライバル的存在「Atom」のテーマが使えるよー、みたいなやつです。昔はAtom教を信仰していたので使ってます。見やすい色で作業も捗るのでおすすめです。
 

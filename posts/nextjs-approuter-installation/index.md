@@ -62,7 +62,7 @@ npm install next@latest react@latest react-dom@latest
 
 ### Create the app folder（appディレクトリの作成）
 次に、appディレクトリを作成し、`layout.tsx`と`page.tsx`ファイルを追加します。これらは、ユーザーがアプリケーションのルートにアクセスしたときにレンダリングされます。
-![](app-getting-started.webp)
+![](./app-getting-started.webp)
 `app/layout.tsx`の中に、必要な`<html>`タグと`<body>`タグを含むルートレイアウトを作成します。
 ```typescript
 export default function RootLayout({
