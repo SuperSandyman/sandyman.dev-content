@@ -55,7 +55,7 @@ root.mainloop()
 
 最大化したい場合は、`root.attributes("-zoomed", "1")`を付け加えます。(LinuxやMacのみ)
 
-![](./tkinter_zoomed.webrunp)
+![](./tkinter_zoomed.webp)
 
 するとこんな感じのバカでかいウィンドウが出てきます。
 
