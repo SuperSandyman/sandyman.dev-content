@@ -37,7 +37,7 @@ WindowsやMacの方は、ChocolateyやHomeBrew？とかを使っていい感じ�
 
 付け足したら、myblogにcdして`hugo server -D`というコマンドを実行します。ブラウザでlocalhost:1313にアクセスすると、いい感じのブログになっていると思います。これでテーマの追加は完成です！
 
-![Mainroad](mainroad_preview.webp)
+![Mainroad](./mainroad_preview.webp)
 
 ## 4.記事の作成
 次は、記事の作成の方法です！Hugoで記事を作成する際は、`hugo new posts/hogehoge.md`というコマンドを実行します。実行すると自動的にcontent直下に`posts`というフォルダが作成され、その中にhogehoge.mdが入っているはずです。あとはマークダウン形式で書いていけば完成です！
