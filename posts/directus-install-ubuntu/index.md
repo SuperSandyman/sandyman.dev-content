@@ -3,7 +3,6 @@ title: "VPSのUbuntuでDirectusをホスティングしたときのメモ"
 date: "2024-04-20"
 tags: ["Ubuntu", "Directus", "ヘッドレスCMS"]
 categories: ["Directus"]
-draft: true
 ---
 
 皆さんこんにちは！Sandyマンです。
