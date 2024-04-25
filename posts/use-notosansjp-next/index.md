@@ -10,7 +10,7 @@ emoji: "🐣"
 Next.js (App Router) でNoto Sans JPを使うときの方法を忘れてしまったので自分用にメモしておきます。
 
 ## 方法
-```ts showLineNumbers
+```ts
 // 変更前のlayout.tsx
 import './globals.css'
 import type { Metadata } from 'next'
@@ -36,7 +36,7 @@ export default function RootLayout({
 }
 ```
 これを下のようにする。
-```ts {4, 6-10, 24} showLineNumbers
+```ts
 // 変更後のlayout.tsx
 import "./globals.css";
 import type { Metadata } from "next";
