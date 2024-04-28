@@ -5,7 +5,7 @@ from shutil import move, rmtree
 
 # Function to get the current date in YYYY-MM-DD format
 def get_current_date():
-    return datetime.now().isoformat()
+    return datetime.now().date().isoformat()
 
 # Function to create a new draft article
 def create_article(slug, directory):
