@@ -57,7 +57,7 @@ eval "$(starship init zsh)"
 starship preset tokyo-night -o ~/.config/starship.toml
 ```
 
-`~/.config/starship.toml`に以下の内容を書き込みます。
+`~/.config/starship.toml`に以下の内容を書き込みます。（絵文字が表示されてなさそうなので[公式](https://starship.rs/presets/tokyo-night)見てね）
 ```toml
 format = """
 [░▒▓](#a3aed2)\
