@@ -1,15 +1,13 @@
 import os
 from datetime import datetime
 from pathlib import Path
-from shutil import move, rmtree
+from shutil import move
 
-# Function to get the current date in YYYY-MM-DD format
 def get_current_date():
     return datetime.now().date().isoformat()
 
-# Function to create a new draft article
 def create_article(slug, directory):
-    # Set frontmatter based on the article type
+    # フロントマターを設定
     if directory == "posts":
         frontmatter = (
             f"---\n"
@@ -20,63 +18,55 @@ def create_article(slug, directory):
             f"draft: true\n"
             f"---\n\n"
             f"# {slug}\n\n"
-            f"Your content here...\n"
+            f"内容をここに書いてください。\n"
         )
-    else:  # For 'scraps'
+    else:  # 'scraps'用
         frontmatter = (
             f"---\n"
             f"date: \"{get_current_date()}\"\n"
             f"title: \"\"\n"
             f"---\n\n"
             f"# {slug}\n\n"
-            f"Your content here...\n"
+            f"内容をここに書いてください。\n"
         )
 
-    # Path for the draft article
     draft_path = Path(f"draft/{slug}/index.md")
     draft_path.parent.mkdir(parents=True, exist_ok=True)
-    
-    # Write the content to the file
     draft_path.write_text(frontmatter, encoding="utf-8")
-    print(f"記事 '{slug}' が作成されました！ パス: {draft_path}")
+    print(f"記事 '{slug}' が作成されました。パス: {draft_path}")
 
-# Function to publish an article
 def publish_article(slug, directory):
-    # Path for the draft and published article
-    draft_path = Path(f"draft/{slug}/index.md")
-
-    # Check if the draft exists
-    if not draft_path.exists():
-        print(f"記事 '{slug}' は見つかりませんでした...")
+    draft_path = Path(f"draft/{slug}")
+    draft_index_path = draft_path / "index.md"
+    
+    if not draft_index_path.exists():
+        print(f"記事 '{slug}' は見つかりませんでした。")
         return
-    
-    # Update draft to false and get the modified content (if posts)
+
+    # コンテンツを読み込み、公開状態に設定
+    content = draft_index_path.read_text(encoding="utf-8")
     if directory == "posts":
-        content = draft_path.read_text(encoding="utf-8").replace("draft: true", "draft: false")
-    else:
-        content = draft_path.read_text(encoding="utf-8")
-    
-    # Path for the published article
-    publish_path = Path(f"{directory}/{slug}/index.md")
+        content = content.replace("draft: true", "draft: false")
+    draft_index_path.write_text(content, encoding="utf-8")
+
+    # ディレクトリを公開フォルダに移動
+    publish_path = Path(directory) / slug
+
+    # 既存のディレクトリのチェック
+    if publish_path.exists():
+        print(f"公開パス '{publish_path}' ですでに存在しています。名前を変更するか削除してください。")
+        return
+
     publish_path.parent.mkdir(parents=True, exist_ok=True)
-    
-    # Write the updated content to the new location
-    publish_path.write_text(content, encoding="utf-8")
+    move(str(draft_path), str(publish_path))
 
-    # Delete the draft
-    rmtree(draft_path.parent)
-
-    # Get commit message from the user
     commit_message = input("コミットメッセージを入力してください: ")
-
-    # Git commands to add, commit, and push the article
     os.system(f"git add {publish_path}")
     os.system(f'git commit -m "{commit_message}"')
     os.system("git push")
 
-    print(f"記事 '{slug}' が公開されました！ パス: {publish_path}")
+    print(f"記事 '{slug}' が公開されました。パス: {publish_path}")
 
-# Main function to handle user input
 def main():
     action = input("行いたいアクションを入力してください ('create' or 'publish')： ").lower()
     slug = input("記事のslugを入力してください：").lower()
