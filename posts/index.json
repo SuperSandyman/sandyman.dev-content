@@ -1,0 +1,770 @@
+[
+  {
+    "id": "2022-final-post",
+    "title": "2022年もありがとうございました！",
+    "slug": "2022-final-post",
+    "status": "published",
+    "categories": [
+      "ブログ"
+    ],
+    "tags": [
+      "ブログ",
+      "年末年始"
+    ],
+    "author": "",
+    "publishedAt": "2022-12-31",
+    "updatedAt": "2022-12-31",
+    "excerpt": "皆さんこんにちは。Sandyマンです。いよいよ2022年も終わりですね！ということでてきとうに202...",
+    "readTime": 1,
+    "directory": "posts"
+  },
+  {
+    "id": "2023-final-post",
+    "title": "2023年を振り返ってみた",
+    "slug": "2023-final-post",
+    "status": "published",
+    "categories": [
+      "ブログ"
+    ],
+    "tags": [
+      "ブログ",
+      "年末年始"
+    ],
+    "author": "",
+    "publishedAt": "2023-12-31",
+    "updatedAt": "2023-12-31",
+    "excerpt": "皆さんこんにちは。Sandyマンです。いろいろあった2023年ももうすぐ終わりですね！ということで、...",
+    "readTime": 1,
+    "directory": "posts"
+  },
+  {
+    "id": "2024-final-post",
+    "title": "2024年の振り返り",
+    "slug": "2024-final-post",
+    "status": "published",
+    "categories": [
+      "ブログ"
+    ],
+    "tags": [
+      "ブログ",
+      "年末年始"
+    ],
+    "author": "",
+    "publishedAt": "2024-12-31",
+    "updatedAt": "2024-12-31",
+    "excerpt": "2024年の私の活動を雑にまとめましたお。",
+    "readTime": 1,
+    "directory": "posts"
+  },
+  {
+    "id": "about-reverse-proxy",
+    "title": "リバースプロキシについて調べてみた",
+    "slug": "about-reverse-proxy",
+    "status": "published",
+    "categories": [
+      "Webサーバー"
+    ],
+    "tags": [
+      "Nginx",
+      "リバースプロキシ",
+      "セキュリティ"
+    ],
+    "author": "",
+    "publishedAt": "2023-05-06",
+    "updatedAt": "2023-05-06",
+    "excerpt": "皆さんこんにちは。Sandyマンです。今回は、前回の記事で出てきた「リバースプロキシ」について調べて...",
+    "readTime": 2,
+    "directory": "posts"
+  },
+  {
+    "id": "ai-create-fakeimages",
+    "title": "本当にAIでフェイクの画像を生成することができるのか？Pythonで試してみた！",
+    "slug": "ai-create-fakeimages",
+    "status": "published",
+    "categories": [
+      "Python"
+    ],
+    "tags": [
+      "AI",
+      "Python",
+      "時事ネタ",
+      "画像生成"
+    ],
+    "author": "",
+    "publishedAt": "2022-10-03",
+    "updatedAt": "2022-10-03",
+    "excerpt": "皆さんこんにちは！Sandyマンです！",
+    "readTime": 3,
+    "directory": "posts"
+  },
+  {
+    "id": "beautifulsoup-python",
+    "title": "【Python】BeautifulSoupで誰でもらくらくスクレイピング",
+    "slug": "beautifulsoup-python",
+    "status": "published",
+    "categories": [
+      "Python"
+    ],
+    "tags": [
+      "Python",
+      "BeautifulSoup",
+      "スクレイピング",
+      "おすすめ"
+    ],
+    "author": "",
+    "publishedAt": "2023-01-21",
+    "updatedAt": "2023-01-21",
+    "excerpt": "## 茶番",
+    "readTime": 4,
+    "directory": "posts"
+  },
+  {
+    "id": "blog-nextjs-migration",
+    "title": "HugoからNext.js (App Router) にブログを移行してみた",
+    "slug": "blog-nextjs-migration",
+    "status": "published",
+    "categories": [
+      "ブログ"
+    ],
+    "tags": [
+      "ブログ",
+      "Next.js",
+      "Hugo"
+    ],
+    "author": "",
+    "publishedAt": "2023-09-18",
+    "updatedAt": "2023-09-18",
+    "excerpt": "お久しぶりです！Sandyマンです。",
+    "readTime": 2,
+    "directory": "posts"
+  },
+  {
+    "id": "blog-open",
+    "title": "【念願】ブログ引っ越したぞーー！！！",
+    "slug": "blog-open",
+    "status": "published",
+    "categories": [
+      "ブログ"
+    ],
+    "tags": [
+      "ブログ"
+    ],
+    "author": "",
+    "publishedAt": "2022-09-09",
+    "updatedAt": "2022-09-09",
+    "excerpt": "皆さんこんにちは！Sandyマンです。",
+    "readTime": 1,
+    "directory": "posts"
+  },
+  {
+    "id": "blog-theme-change",
+    "title": "ブログのテーマをPaperModに変えました",
+    "slug": "blog-theme-change",
+    "status": "published",
+    "categories": [
+      "ブログ"
+    ],
+    "tags": [
+      "Hugo",
+      "ブログ"
+    ],
+    "author": "",
+    "publishedAt": "2023-03-29",
+    "updatedAt": "2023-03-29",
+    "excerpt": "皆さんこんにちは。Sandyマンです。いきなりなんですが、ブログのテーマを変えてみました。変更点とか...",
+    "readTime": 1,
+    "directory": "posts"
+  },
+  {
+    "id": "buy-galaxy-s25",
+    "title": "Galaxy S25を買いました",
+    "slug": "buy-galaxy-s25",
+    "status": "published",
+    "categories": [
+      "スマホ"
+    ],
+    "tags": [
+      "スマホ"
+    ],
+    "author": "",
+    "publishedAt": "2025-04-25",
+    "updatedAt": "2025-04-25",
+    "excerpt": "今年最初の記事が4月だと！！！！！！！？？？？？？？？（錯乱）",
+    "readTime": 4,
+    "directory": "posts"
+  },
+  {
+    "id": "chatgpt-often-use-prompt",
+    "title": "個人的によく使うChatGPTのプロンプト",
+    "slug": "chatgpt-often-use-prompt",
+    "status": "published",
+    "categories": [
+      "ChatGPT"
+    ],
+    "tags": [
+      "ChatGPT",
+      "OpenAI",
+      "GPT"
+    ],
+    "author": "",
+    "publishedAt": "2023-03-22",
+    "updatedAt": "2023-03-22",
+    "excerpt": "## はじめに",
+    "readTime": 2,
+    "directory": "posts"
+  },
+  {
+    "id": "chatgpt-techblog-future",
+    "title": "ChatGPT登場後の技術ブログの未来",
+    "slug": "chatgpt-techblog-future",
+    "status": "published",
+    "categories": [
+      "ブログ"
+    ],
+    "tags": [
+      "ChatGPT",
+      "ブログ"
+    ],
+    "author": "",
+    "publishedAt": "2023-04-13",
+    "updatedAt": "2023-04-13",
+    "excerpt": "皆さんこんにちは。Sandyマンです。今回は、「ChatGPT登場後の技術ブログの未来」ということで...",
+    "readTime": 8,
+    "directory": "posts"
+  },
+  {
+    "id": "come-back-hugo",
+    "title": "いろいろあってブログをHugoに戻した",
+    "slug": "come-back-hugo",
+    "status": "published",
+    "categories": [
+      "ブログ"
+    ],
+    "tags": [
+      "ブログ",
+      "Hugo"
+    ],
+    "author": "",
+    "publishedAt": "2024-04-28",
+    "updatedAt": "2024-04-28",
+    "excerpt": "今までHugo、Next.js、Astroといろいろなところでブログを書いてきたわけですが、この度ま...",
+    "readTime": 2,
+    "directory": "posts"
+  },
+  {
+    "id": "css-bulma-using",
+    "title": "CSSフレームワーク「Bulma」でいろいろ作ってみた",
+    "slug": "css-bulma-using",
+    "status": "published",
+    "categories": [
+      "CSS"
+    ],
+    "tags": [
+      "Bulma",
+      "CSS",
+      "デザイン"
+    ],
+    "author": "",
+    "publishedAt": "2022-09-16",
+    "updatedAt": "2022-09-16",
+    "excerpt": "## はじめに",
+    "readTime": 2,
+    "directory": "posts"
+  },
+  {
+    "id": "directus-install-ubuntu",
+    "title": "VPSのUbuntuでDirectusをホスティングしたときのメモ",
+    "slug": "directus-install-ubuntu",
+    "status": "published",
+    "categories": [
+      "Directus"
+    ],
+    "tags": [
+      "Ubuntu",
+      "Directus",
+      "ヘッドレスCMS"
+    ],
+    "author": "",
+    "publishedAt": "2024-04-20",
+    "updatedAt": "2024-04-20",
+    "excerpt": "皆さんこんにちは！Sandyマンです！",
+    "readTime": 5,
+    "directory": "posts"
+  },
+  {
+    "id": "docker-remotecontainer-vscode",
+    "title": "今更VSCodeのRemote Containerを使ってみる",
+    "slug": "docker-remotecontainer-vscode",
+    "status": "published",
+    "categories": [
+      "VSCode"
+    ],
+    "tags": [
+      "VSCode",
+      "Remotecontainer"
+    ],
+    "author": "",
+    "publishedAt": "2023-05-13",
+    "updatedAt": "2023-05-13",
+    "excerpt": "皆さんこんにちは。Sandyマンです。今回は、今更ながらVSCodeのRemote Containe...",
+    "readTime": 2,
+    "directory": "posts"
+  },
+  {
+    "id": "flask-fastapi-python",
+    "title": "ChatGPTに記事書かせたらどうなるのかやってみた？（FlaskとFastAPIの違いについて特徴などを比較）",
+    "slug": "flask-fastapi-python",
+    "status": "published",
+    "categories": [
+      "Python"
+    ],
+    "tags": [
+      "ChatGPT",
+      "AI生成",
+      "Python",
+      "Flask"
+    ],
+    "author": "",
+    "publishedAt": "2023-02-15",
+    "updatedAt": "2023-02-15",
+    "excerpt": "## はじめに",
+    "readTime": 2,
+    "directory": "posts"
+  },
+  {
+    "id": "flatpak-chrome-install",
+    "title": "Flatpakを使ってUbuntuにChromeをインストールする",
+    "slug": "flatpak-chrome-install",
+    "status": "published",
+    "categories": [
+      "Linux"
+    ],
+    "tags": [
+      "Chrome",
+      "Linux",
+      "Flatpak"
+    ],
+    "author": "",
+    "publishedAt": "2022-12-15",
+    "updatedAt": "2022-12-15",
+    "excerpt": "## はじめに",
+    "readTime": 2,
+    "directory": "posts"
+  },
+  {
+    "id": "hugo-index-xml",
+    "title": "Hugoのindex.xmlに一部記事が登録されないようにしてみた",
+    "slug": "hugo-index-xml",
+    "status": "published",
+    "categories": [
+      "Hugo"
+    ],
+    "tags": [
+      "Hugo",
+      "ブログ",
+      "SEO"
+    ],
+    "author": "",
+    "publishedAt": "2023-04-24",
+    "updatedAt": "2023-04-24",
+    "excerpt": "皆さんこんにちは。Sandyマンです。Hugoのindex.xmlに一部記事が登録されないようにして...",
+    "readTime": 6,
+    "directory": "posts"
+  },
+  {
+    "id": "hugo-make-blog",
+    "title": "【WordPress卒業】HugoとVercelを使って安くて速いブログを作る",
+    "slug": "hugo-make-blog",
+    "status": "published",
+    "categories": [
+      "Hugo"
+    ],
+    "tags": [
+      "Hugo",
+      "ブログ",
+      "おすすめ"
+    ],
+    "author": "",
+    "publishedAt": "2022-09-13",
+    "updatedAt": "2022-09-13",
+    "excerpt": "皆さんこんにちは、Sandyマンです！",
+    "readTime": 4,
+    "directory": "posts"
+  },
+  {
+    "id": "hugo-to-gatsby-1",
+    "title": "HugoをやめてGatsbyで最強なブログを作る",
+    "slug": "hugo-to-gatsby-1",
+    "status": "published",
+    "categories": [
+      "ブログ"
+    ],
+    "tags": [
+      "ブログ",
+      "Hugo",
+      "Gatsby"
+    ],
+    "author": "",
+    "publishedAt": "2023-05-30",
+    "updatedAt": "2023-05-30",
+    "excerpt": "皆さんこんにちは。Sandyマンです。今回は、HugoをやめてGatsbyでブログを作り直したくなっ...",
+    "readTime": 2,
+    "directory": "posts"
+  },
+  {
+    "id": "linux-funny-command",
+    "title": "暇つぶしになる面白いLinuxのコマンド5選！友達に自慢できるかも！？",
+    "slug": "linux-funny-command",
+    "status": "published",
+    "categories": [
+      "Linux"
+    ],
+    "tags": [
+      "Linux",
+      "コマンド",
+      "まとめ記事",
+      "おすすめ"
+    ],
+    "author": "",
+    "publishedAt": "2022-09-14",
+    "updatedAt": "2022-09-14",
+    "excerpt": "皆さんこんにちは！Sandyマンです！",
+    "readTime": 2,
+    "directory": "posts"
+  },
+  {
+    "id": "linux-kernel-build",
+    "title": "【備忘録】UbuntuでLinuxカーネルをビルドしてみたときの手順",
+    "slug": "linux-kernel-build",
+    "status": "published",
+    "categories": [
+      "Linux"
+    ],
+    "tags": [
+      "Linux",
+      "カーネル",
+      "ビルド"
+    ],
+    "author": "",
+    "publishedAt": "2023-03-28",
+    "updatedAt": "2023-03-28",
+    "excerpt": "## はじめに",
+    "readTime": 3,
+    "directory": "posts"
+  },
+  {
+    "id": "meikei-yell-love",
+    "title": "【クソ記事】メイケイエールへのまあまあ熱い想いを書き殴る",
+    "slug": "meikei-yell-love",
+    "status": "published",
+    "categories": [
+      "好きな馬のはなし"
+    ],
+    "tags": [
+      "クソ記事",
+      "メイケイエール",
+      "競馬"
+    ],
+    "author": "",
+    "publishedAt": "2022-09-29",
+    "updatedAt": "2022-09-29",
+    "excerpt": "皆さんこんにちは！Sandyマンです！今回は技術系は疲れたので、私の推しの馬であるメイケイエールへの...",
+    "readTime": 2,
+    "directory": "posts"
+  },
+  {
+    "id": "nextjs-approuter-document-ja",
+    "title": "Next.js(App Router)のドキュメント日本語訳まとめ",
+    "slug": "nextjs-approuter-document-ja",
+    "status": "published",
+    "categories": [
+      "翻訳"
+    ],
+    "tags": [
+      "公式ドキュメント",
+      "Next.js",
+      "日本語訳"
+    ],
+    "author": "",
+    "publishedAt": "2023-05-16",
+    "updatedAt": "2023-05-16",
+    "excerpt": "Next.js 13.4のApp Routerのドキュメントを日本語訳してみてます。翻訳にはDeep...",
+    "readTime": 1,
+    "directory": "posts"
+  },
+  {
+    "id": "nextjs-approuter-installation",
+    "title": "【ドキュメント日本語訳】Next.js 13.4 App Router Installation",
+    "slug": "nextjs-approuter-installation",
+    "status": "published",
+    "categories": [
+      "翻訳"
+    ],
+    "tags": [
+      "公式ドキュメント",
+      "翻訳",
+      "Next.js"
+    ],
+    "author": "",
+    "publishedAt": "2023-05-16",
+    "updatedAt": "2023-05-16",
+    "excerpt": "（コードはすべてTypeScriptです。Deeplなどで翻訳しました）",
+    "readTime": 5,
+    "directory": "posts"
+  },
+  {
+    "id": "nextjs-firebase-app-1",
+    "title": "Next.jsで個人開発したいので技術選定してみる",
+    "slug": "nextjs-firebase-app-1",
+    "status": "published",
+    "categories": [
+      "個人開発"
+    ],
+    "tags": [
+      "雑",
+      "個人開発",
+      "技術選定"
+    ],
+    "author": "",
+    "publishedAt": "2023-10-03",
+    "updatedAt": "2023-10-03",
+    "excerpt": "個人開発やりたいときってありますよね？ね？ということで技術選定をするだけの記事（というかメモ）です！...",
+    "readTime": 1,
+    "directory": "posts"
+  },
+  {
+    "id": "nextjs-firebase-app-2",
+    "title": "Next.jsでの個人開発の設計的なのをしてみる",
+    "slug": "nextjs-firebase-app-2",
+    "status": "published",
+    "categories": [
+      "個人開発"
+    ],
+    "tags": [
+      "個人開発",
+      "設計",
+      "デザイン"
+    ],
+    "author": "",
+    "publishedAt": "2023-10-20",
+    "updatedAt": "2023-10-20",
+    "excerpt": "皆さんこんにちは。Sandyマンです。今回は個人開発の設計みたいなのについて考えていきます。それでは...",
+    "readTime": 1,
+    "directory": "posts"
+  },
+  {
+    "id": "nextjs-nestjs-docker-setup",
+    "title": "Docker×Next.js×NestJS×PostgreSQLの環境構築をしてみる",
+    "slug": "nextjs-nestjs-docker-setup",
+    "status": "published",
+    "categories": [
+      "環境構築"
+    ],
+    "tags": [
+      "Docker",
+      "Next.js",
+      "NestJS"
+    ],
+    "author": "",
+    "publishedAt": "2023-05-05",
+    "updatedAt": "2023-05-05",
+    "excerpt": "皆さんこんにちは。Sandyマンです。今回は、「Docker×Next.js×NestJS×Post...",
+    "readTime": 8,
+    "directory": "posts"
+  },
+  {
+    "id": "nextjs-tailwindcss-docker",
+    "title": "Next.js×DockerのときなぜかTailwind CSSが使えない",
+    "slug": "nextjs-tailwindcss-docker",
+    "status": "published",
+    "categories": [
+      "React"
+    ],
+    "tags": [
+      "Next.js",
+      "Docker",
+      "TailwindCSS"
+    ],
+    "author": "",
+    "publishedAt": "2023-05-08",
+    "updatedAt": "2023-05-08",
+    "excerpt": "Next.jsとDockerを使用する際、なぜかTailwind CSSが効かないトラブル。いろいろ...",
+    "readTime": 1,
+    "directory": "posts"
+  },
+  {
+    "id": "oreilly-total-price",
+    "title": "オライリー本を全冊買ったらいくらになるのか調べた",
+    "slug": "oreilly-total-price",
+    "status": "published",
+    "categories": [
+      "技術書"
+    ],
+    "tags": [
+      "技術書",
+      "Python"
+    ],
+    "author": "",
+    "publishedAt": "2024-10-07",
+    "updatedAt": "2024-10-07",
+    "excerpt": "「リーダブルコード」や「ゼロから作るDeep Learning」などの技術書で有名なオライリーさん、...",
+    "readTime": 2,
+    "directory": "posts"
+  },
+  {
+    "id": "portable-ssd-ubuntu",
+    "title": "外付けSSDにUbuntuをインストールして開発環境を作ろう",
+    "slug": "portable-ssd-ubuntu",
+    "status": "published",
+    "categories": [
+      "Linux"
+    ],
+    "tags": [
+      "Ubuntu",
+      "Linux"
+    ],
+    "author": "",
+    "publishedAt": "2024-11-05",
+    "updatedAt": "2024-11-05",
+    "excerpt": "実機でUbuntuを使いたいけど、デュアルブートは怖いしWindowsを消したくはない...。と思っ...",
+    "readTime": 6,
+    "directory": "posts"
+  },
+  {
+    "id": "privacy-policy",
+    "title": "プライバシーポリシー",
+    "slug": "privacy-policy",
+    "status": "published",
+    "categories": [
+      "ブログ"
+    ],
+    "tags": [
+      "プライバシーポリシー",
+      "ブログ"
+    ],
+    "author": "",
+    "publishedAt": "2022-09-08",
+    "updatedAt": "2022-09-08",
+    "excerpt": "本プライバシーポリシーは、Sandyマンのブログ（以下、「当サイト」とします。)の各種サービス（当サ...",
+    "readTime": 6,
+    "directory": "posts"
+  },
+  {
+    "id": "profile",
+    "title": "プロフィール",
+    "slug": "profile",
+    "status": "published",
+    "categories": [
+      "ブログ"
+    ],
+    "tags": [
+      "プロフィール",
+      "ブログ"
+    ],
+    "author": "",
+    "publishedAt": "2022-09-09",
+    "updatedAt": "2022-09-09",
+    "excerpt": "Sandyマンです。完全に趣味でブログをやったりWeb開発してます。",
+    "readTime": 1,
+    "directory": "posts"
+  },
+  {
+    "id": "python-gui-tkinter",
+    "title": "Pythonの標準ライブラリ「Tkinter」でGUIアプリケーションをサクッと作る",
+    "slug": "python-gui-tkinter",
+    "status": "published",
+    "categories": [
+      "Python"
+    ],
+    "tags": [
+      "Python",
+      "Tkinter",
+      "GUI"
+    ],
+    "author": "",
+    "publishedAt": "2022-09-20",
+    "updatedAt": "2022-09-20",
+    "excerpt": "## はじめに",
+    "readTime": 3,
+    "directory": "posts"
+  },
+  {
+    "id": "react-typescript-howto",
+    "title": "React×TypeScriptの基本についてまとめる",
+    "slug": "react-typescript-howto",
+    "status": "published",
+    "categories": [
+      "React"
+    ],
+    "tags": [
+      "React",
+      "TypeScript",
+      "JavaScript"
+    ],
+    "author": "",
+    "publishedAt": "2023-05-07",
+    "updatedAt": "2023-05-07",
+    "excerpt": "皆さんこんにちは。Sandyマンです。今回は、「React×TypeScriptの基本」ということで...",
+    "readTime": 4,
+    "directory": "posts"
+  },
+  {
+    "id": "tocbot-make-toc",
+    "title": "Tocbotを使ってマークダウンブログに目次を実装",
+    "slug": "tocbot-make-toc",
+    "status": "published",
+    "categories": [
+      "Next.js"
+    ],
+    "tags": [
+      "Tocbot",
+      "Next.js",
+      "ブログ"
+    ],
+    "author": "",
+    "publishedAt": "2023-09-23",
+    "updatedAt": "2023-09-23",
+    "excerpt": "## 概要",
+    "readTime": 3,
+    "directory": "posts"
+  },
+  {
+    "id": "use-notosansjp-next",
+    "title": "Next.js (App Router) でNoto Sans JPを使いたい",
+    "slug": "use-notosansjp-next",
+    "status": "published",
+    "categories": [
+      "Next.js"
+    ],
+    "tags": [
+      "フォント",
+      "Next.js",
+      "App Router"
+    ],
+    "author": "",
+    "publishedAt": "2023-10-08",
+    "updatedAt": "2023-10-08",
+    "excerpt": "## 概要",
+    "readTime": 3,
+    "directory": "posts"
+  },
+  {
+    "id": "vscode-addon-themes",
+    "title": "VSCodeで開発するときのおすすめ拡張機能を紹介する",
+    "slug": "vscode-addon-themes",
+    "status": "published",
+    "categories": [
+      "VSCode"
+    ],
+    "tags": [
+      "VSCode",
+      "JavaScript"
+    ],
+    "author": "",
+    "publishedAt": "2022-11-04",
+    "updatedAt": "2022-11-04",
+    "excerpt": "皆さんこんにちは！Sandyマンです！今回は、プログラマー御用達のエディタ「Visual Studi...",
+    "readTime": 1,
+    "directory": "posts"
+  }
+]
