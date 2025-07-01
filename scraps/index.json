@@ -1,0 +1,26 @@
+[
+  {
+    "slug": "kojin-kaihatsu-by-remix",
+    "excerpt": "Remixを使ってみたいので、Remix + WebSocket + CloudFlare Workersの構成で個人開発をしてみよう！という感じです...",
+    "directory": "scraps",
+    "date": "2024-05-12",
+    "title": "RemixとWebSocketとかで何か作ってみる"
+  },
+  {
+    "slug": "osakahai-2023",
+    "excerpt": "大阪杯結局負けました。普通にジャックドール買っておけばよかった。買ったら呪いで飛んでたかもだけど...。",
+    "directory": "scraps",
+    "date": "2023-04-02",
+    "title": "大阪杯",
+    "archives": [
+      "2023/04"
+    ]
+  },
+  {
+    "slug": "tennosho-spring-2024",
+    "excerpt": "◎タスティエーラ<br>",
+    "directory": "scraps",
+    "date": "2024-04-28",
+    "title": "2024年天皇賞・春の本気予想"
+  }
+]
