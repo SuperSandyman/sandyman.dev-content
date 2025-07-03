@@ -698,17 +698,6 @@
     "toc": true
   },
   {
-    "slug": "test-post",
-    "excerpt": "# 新しい記事",
-    "directory": "posts",
-    "title": "test-post",
-    "tags": [
-      "テスト"
-    ],
-    "categories": [],
-    "date": "2025/07/24"
-  },
-  {
     "slug": "tocbot-make-toc",
     "excerpt": "## 概要",
     "directory": "posts",
