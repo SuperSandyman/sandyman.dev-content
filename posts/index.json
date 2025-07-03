@@ -751,5 +751,18 @@
     ],
     "emoji": "🙌",
     "toc": true
+  },
+  {
+    "slug": "test-post",
+    "excerpt": "## テスト記事    ",
+    "directory": "posts",
+    "title": "テスト記事",
+    "tags": [
+      "test"
+    ],
+    "categories": [
+      "test"
+    ],
+    "date": "2025/07/25"
   }
 ]
