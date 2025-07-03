@@ -1,6 +1,7 @@
 ---
 title: test-post
-tags: []
+tags:
+  - テスト
 categories: []
 date: 2025/07/24
 ---
