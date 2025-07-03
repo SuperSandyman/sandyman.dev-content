@@ -702,7 +702,9 @@
     "excerpt": "# 新しい記事",
     "directory": "posts",
     "title": "test-post",
-    "tags": [],
+    "tags": [
+      "テスト"
+    ],
     "categories": [],
     "date": "2025/07/24"
   },
