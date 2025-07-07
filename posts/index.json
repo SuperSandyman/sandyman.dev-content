@@ -41,7 +41,6 @@
     "excerpt": "2024年の私の活動を雑にまとめましたお。",
     "directory": "posts",
     "title": "2024年の振り返り",
-    "date": "2024-12-31",
     "tags": [
       "ブログ",
       "年末年始"
@@ -49,7 +48,7 @@
     "categories": [
       "ブログ"
     ],
-    "draft": false
+    "date": "2024-12-31"
   },
   {
     "slug": "about-reverse-proxy",
