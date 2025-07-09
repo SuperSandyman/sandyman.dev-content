@@ -7,4 +7,4 @@ date: 2025/07/08
 ---
 ## 画像アップロード機能のテスト    
 
-![Screenshot_20250314_231054](https://raw.githubusercontent.com/SuperSandyman/sandyman.dev-content/main/draft/test-post/Screenshot_20250314_231054-2025-07-08T14-45-57-172Z.png)
+![Screenshot_20250314_231054](Screenshot_20250314_231054-2025-07-08T14-45-57-172Z.png)
