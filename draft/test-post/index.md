@@ -1,7 +1,7 @@
 ---
-slug: test-post
 title: 画像アップロード機能のテスト
-tags: []
+tags:
+  - テスト
 categories: []
 date: 2025/07/08
 ---
