@@ -1,9 +1,8 @@
 ---
-slug: test-post
 title: お試しの記事
 tags: []
 categories: []
-date: '2025-11-15'
+date: '2025-11-16'
 ---
 # 新しい記事
 
