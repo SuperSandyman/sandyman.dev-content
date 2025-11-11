@@ -7,16 +7,5 @@
     "tags": [],
     "categories": [],
     "date": "2025/08/20"
-  },
-  {
-    "slug": "test-post",
-    "excerpt": "# 新しい記事",
-    "directory": "draft",
-    "title": "お試しの記事 testpost",
-    "tags": [
-      "test"
-    ],
-    "categories": [],
-    "date": "2025-11-19"
   }
 ]
