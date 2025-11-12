@@ -1,16 +1,30 @@
 ---
-slug: thinkpad-t14g6-review
 title: ThinkPad T14 Gen6 ILLをレビューしてみる
 tags: []
 categories: []
 date: '2025-11-18'
 ---
-前回[こんな記事](https://www.sandyman.dev/posts/buy-thinkpad-t14g6/)を書いたわけですが、投稿から約1週間後に到着し、今日までそれなりに使ってきたのでレビューのようなものをしようと思います。
+前回[こんな記事](https://www.sandyman.dev/posts/buy-thinkpad-t14g6/)を書いたわけですが、その後1週間くらい後に到着し、今日までそれなりに使ってきたのでレビューのようなものをしていきます。内容は主に前まで使っていたThinkPad X1 Carbon Gen10との比較になると思います。
 
 ## 開封
+![1000007401](1000007401-2025-11-12T01-34-55-379Z.jpg)
+
+本体は主に樹脂素材でできている感じです。ついこの間まで使っていたX1 Carbonはカーボンファイバー製の筐体だったので、それに比べると質感の良さでは劣っている印象です。
+
+![1000007402](1000007402-2025-11-12T09-44-26-346Z.jpg)
+
+厚さに関しても、X1 Carbonと並べて置くとはっきりわかるくらいにはT14のほうが分厚いです。重さもT14のほうが数百グラム重いのですが、持ち運びは普通に可能な程度の重さです。
+
+
+![1000007403](1000007403-2025-11-12T11-08-15-851Z.jpg)
+
+
+キーボードは英語配列のものにしました。キーへの印字が少なくスタイリッシュな印象を受けます。記号部のキーピッチが日本語配列よりもゆとりがあっていい感じです。
 
 ## 性能・ベンチマーク
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">特に条件は変えずに再挑戦した結果。これくらいならまあ許せる。 <a href="https://t.co/4ggCQaNhJ2">pic.twitter.com/4ggCQaNhJ2</a></p>&mdash; Sandyマン (@sandyman_linux) <a href="https://twitter.com/sandyman_linux/status/1979187504902193660?ref_src=twsrc%5Etfw">October 17, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
+CINEBENCH R23の測定結果ですが、まあ高くはないですがそれなりのスコアが出てますね。通常利用で困ることはないでしょう。
 ## Linuxをぶち込む
 
 ## 良いところ
