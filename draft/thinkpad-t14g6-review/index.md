@@ -21,10 +21,15 @@ date: '2025-11-18'
 
 キーボードは英語配列のものにしました。キーへの印字が少なくスタイリッシュな印象を受けます。記号部のキーピッチが日本語配列よりもゆとりがあっていい感じです。
 
+## 分解する
+今回、X1 Carbonに積んでいたSSDを移植する前提で256GBにしたので、分解（といっても裏蓋を開けるだけ）をしてSSDを交換してみました。
+
+
+
 ## 性能・ベンチマーク
 <blockquote class="twitter-tweet"><p lang="ja" dir="ltr">特に条件は変えずに再挑戦した結果。これくらいならまあ許せる。 <a href="https://t.co/4ggCQaNhJ2">pic.twitter.com/4ggCQaNhJ2</a></p>&mdash; Sandyマン (@sandyman_linux) <a href="https://twitter.com/sandyman_linux/status/1979187504902193660?ref_src=twsrc%5Etfw">October 17, 2025</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
-CINEBENCH R23の測定結果ですが、まあ高くはないですがそれなりのスコアが出てますね。通常利用で困ることはないでしょう。
+CINEBENCH R23の測定結果です。同じCPUを積んだマシンの他のレビュー記事では10000近く出ているのでやや低いといえそうです。ですが通常利用で困ることはないでしょう。
 ## Linuxをぶち込む
 
 ## 良いところ
