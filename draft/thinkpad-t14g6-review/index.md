@@ -3,6 +3,7 @@ title: ThinkPad T14 Gen6 ILLをレビューしてみる
 tags: []
 categories: []
 date: '2025-11-18'
+draft: true
 ---
 前回[こんな記事](https://www.sandyman.dev/posts/buy-thinkpad-t14g6/)を書いたわけですが、その後1週間くらい後に到着し、今日までそれなりに使ってきたのでレビューのようなものをしていきます。内容は主に前まで使っていたThinkPad X1 Carbon Gen10との比較になると思います。
 
