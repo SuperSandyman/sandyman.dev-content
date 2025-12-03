@@ -1,11 +1,11 @@
 ---
-slug: install-antigravity-suse
 title: openSUSEでAntigravityを使う
 tags:
   - Linux
   - openSUSE
 categories: []
 date: '2025-11-19'
+draft: true
 ---
 Google謹製のAIエディタ、[Antigravity](https://antigravity.google/)をopenSUSEにインストールする方法です。
 
