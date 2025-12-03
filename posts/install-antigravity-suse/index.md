@@ -5,7 +5,7 @@ tags:
   - openSUSE
 categories: []
 date: '2025-11-19'
-draft: true
+draft: false
 ---
 Google謹製のAIエディタ、[Antigravity](https://antigravity.google/)をopenSUSEにインストールする方法です。
 
