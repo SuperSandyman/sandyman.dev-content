@@ -18,5 +18,18 @@
     "categories": [],
     "date": "2025-11-18",
     "draft": true
+  },
+  {
+    "slug": "install-antigravity-suse",
+    "excerpt": "Google謹製のAIエディタ、[Antigravity](https://antigravity.google/)をopenSUSEにインストールす...",
+    "directory": "draft",
+    "title": "openSUSEでAntigravityを使う",
+    "tags": [
+      "Linux",
+      "openSUSE"
+    ],
+    "categories": [],
+    "date": "2025-11-19",
+    "draft": true
   }
 ]
