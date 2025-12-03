@@ -9,6 +9,14 @@ draft: false
 ---
 前回[こんな記事](https://www.sandyman.dev/posts/buy-thinkpad-t14g6/)を書いたわけですが、その後1週間くらいで本体が到着し、今日までそれなりに使ってきたので、軽くレビューっぽいことをしていきます。内容は前まで使っていたThinkPad X1 Carbon Gen10との比較が多めになっています。
 
+## 購入したマシンのスペック
+- ThinkPad T14 Gen6 ILL
+- Intel Core Ultra 7 258V
+- RAM 32GB
+- SSD 256GB
+- 非光沢WUXGA液晶（sRGB100%）
+- バックライト付き英語配列キーボード
+
 ## 開封
 ![1000007401](1000007401-2025-11-12T01-34-55-379Z.jpg)
 
