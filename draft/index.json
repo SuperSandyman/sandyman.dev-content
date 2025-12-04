@@ -8,15 +8,5 @@
     "categories": [],
     "date": "2025-08-20",
     "draft": true
-  },
-  {
-    "slug": "test-post",
-    "excerpt": "# 新しい記事",
-    "directory": "draft",
-    "title": "お試しの記事",
-    "tags": [],
-    "categories": [],
-    "date": "2025-12-04",
-    "draft": true
   }
 ]
