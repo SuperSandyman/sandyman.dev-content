@@ -22,5 +22,15 @@
     "directory": "scraps",
     "date": "2024-04-28",
     "title": "2024年天皇賞・春の本気予想"
+  },
+  {
+    "slug": "test-post-1",
+    "excerpt": "# 新しい記事",
+    "directory": "scraps",
+    "title": "お試しの記事",
+    "tags": [],
+    "categories": [],
+    "date": "2025-12-04",
+    "draft": false
   }
 ]
