@@ -5,7 +5,7 @@ tags:
   - パソコン
 categories: []
 date: '2025-12-02'
-draft: false
+draft: true
 ---
 前回[こんな記事](https://www.sandyman.dev/posts/buy-thinkpad-t14g6/)を書いたわけですが、その後1週間くらいで本体が到着し、今日までそれなりに使ってきたので、軽くレビューっぽいことをしていきます。内容は前まで使っていたThinkPad X1 Carbon Gen10との比較が多めになっています。
 
