@@ -3,7 +3,7 @@ title: GitHub Copilotはコスパ最強
 tags: []
 categories: []
 date: '2025-08-20'
-draft: true
+draft: false
 ---
 最近世間ではClaude CodeやCursor、Codex CLIが流行しているそうですが、あえてGitHub Copilotはいいぞという話をします。
 
