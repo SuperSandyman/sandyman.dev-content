@@ -3,7 +3,8 @@ title: ThinkPad T14 Gen6 ILLの雑レビュー
 tags:
   - ThinkPad
   - パソコン
-categories: []
+categories:
+  - ブログ
 date: '2025-12-02'
 draft: false
 ---
