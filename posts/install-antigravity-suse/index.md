@@ -3,7 +3,8 @@ title: openSUSEでAntigravityを使う
 tags:
   - Linux
   - openSUSE
-categories: []
+categories:
+  - Linux
 date: '2025-11-19'
 draft: false
 ---
