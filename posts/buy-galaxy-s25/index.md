@@ -1,8 +1,10 @@
 ---
-title: "Galaxy S25を買いました"
-date: "2025-04-25"
-tags: ["スマホ"]
-categories: ["スマホ"]
+title: Galaxy S25を買ったのでレビュー
+tags:
+  - スマホ
+categories:
+  - スマホ
+date: '2025-04-25'
 draft: false
 ---
 
