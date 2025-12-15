@@ -794,5 +794,18 @@
     ],
     "date": "2025-12-02",
     "draft": false
+  },
+  {
+    "slug": "github-copilot-tier",
+    "excerpt": "GitHub Copilotで使用できるモデルのTier表（表じゃないけど）を作る試みです。具体的な数値やデータは一切なく、完全な主観でお届けします。...",
+    "directory": "posts",
+    "title": "【 完全主観】GitHub Copilotで使えるモデルTier表",
+    "tags": [
+      "GitHub Copilot",
+      "AI"
+    ],
+    "categories": [],
+    "date": "2025-12-15",
+    "draft": false
   }
 ]
