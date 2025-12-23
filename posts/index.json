@@ -763,7 +763,8 @@
     "categories": [
       "ブログ"
     ],
-    "date": "2025/10/09"
+    "date": "2025-10-09",
+    "draft": false
   },
   {
     "slug": "install-antigravity-suse",
