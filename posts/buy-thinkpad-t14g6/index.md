@@ -1,12 +1,12 @@
 ---
-slug: buy-thinkpad-t14g6
 title: ThinkPad T14 Gen6 ILLを買ってしまった
 tags:
   - ThinkPad
   - パソコン
 categories:
   - ブログ
-date: 2025-10-09
+date: '2025-10-09'
+draft: false
 ---
 約3年前にゲットして愛用してきたThinkPad X1 Carbon Gen10が突然起動しなくなったので、新しいのを注文したよというお話です。
 
@@ -47,3 +47,5 @@ HP Omnibook X Flip 14-fmもスペック的には良かったのですが、液�
 
 ## まとめ
 ということで新しいマシンを買ったよというお話でした。早く届いてほしいーーーーーーーーー
+
+（追記）届いたのでレビューを書いてみました→[ThinkPad T14 Gen6 ILLの雑レビュー](https://www.sandyman.dev/posts/thinkpad-t14g6-review/)
