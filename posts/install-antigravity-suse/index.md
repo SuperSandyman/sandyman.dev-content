@@ -1,5 +1,5 @@
 ---
-title: openSUSEでAntigravityを使う
+title: openSUSEでGoogle謹製エディタ、Antigravityを使う
 tags:
   - Linux
   - openSUSE
