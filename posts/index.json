@@ -48,7 +48,8 @@
     "categories": [
       "ブログ"
     ],
-    "date": "2024-12-31"
+    "date": "2024-12-31",
+    "draft": false
   },
   {
     "slug": "about-reverse-proxy",
