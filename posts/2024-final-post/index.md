@@ -6,8 +6,8 @@ tags:
 categories:
   - ブログ
 date: '2024-12-31'
+draft: false
 ---
-
 2024年の私の活動を雑にまとめましたお。
 
 ## GitHub
