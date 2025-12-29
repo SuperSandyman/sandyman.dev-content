@@ -24,8 +24,14 @@
     "excerpt": "2025年の振り返りをしていきます。",
     "directory": "draft",
     "title": "2025年の振り返り",
-    "tags": [],
-    "categories": [],
+    "tags": [
+      "ブログ",
+      "振り返り",
+      "年末年始"
+    ],
+    "categories": [
+      "ブログ"
+    ],
     "date": "2025-12-31",
     "draft": true
   }
