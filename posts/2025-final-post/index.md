@@ -7,7 +7,7 @@ tags:
 categories:
   - ブログ
 date: '2025-12-31'
-draft: true
+draft: false
 ---
 2025年の振り返りをしていきます。
 
