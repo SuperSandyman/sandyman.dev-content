@@ -825,5 +825,18 @@
     ],
     "date": "2025-12-31",
     "draft": false
+  },
+  {
+    "slug": "fix-be201-bluetooth",
+    "excerpt": "8割くらいChatGPTに生成させました。内容は確認済みです。",
+    "directory": "posts",
+    "title": "openSUSE TumbleweedでBluetoothが動作せず、スリープもできない問題の対処法",
+    "tags": [
+      "Linux",
+      "openSUSE"
+    ],
+    "categories": [],
+    "date": "2026-01-05",
+    "draft": false
   }
 ]
