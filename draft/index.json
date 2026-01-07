@@ -21,7 +21,7 @@
   },
   {
     "slug": "2026-opensuse-setup",
-    "excerpt": "## OSインストール編",
+    "excerpt": "いろいろあってOSを再インストールすることになったので、個人的なセットアップ方法を簡単にまとめてみます。インストールするOSは私の好きなopenSUS...",
     "directory": "draft",
     "title": "2026年版、openSUSE Tumbleweedの個人的環境構築",
     "tags": [],
