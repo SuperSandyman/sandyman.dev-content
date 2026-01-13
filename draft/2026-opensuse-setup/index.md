@@ -25,13 +25,15 @@ draft: true
 日本語フォントは安定のNoto Sans CJK JPをインストールし、KDEの設定から変更します。読みやすくて良いです。
 
 ### Zsh & Starship
+シェルはZsh、そのカスタマイズにはStarshipを導入します。前にも書いたので詳しくは[この記事](https://www.sandyman.dev/posts/portable-ssd-ubuntu/)を見てください。
 
 ### Konsole
-ターミナルエミュレータはKDE標準搭載のKonsoleをそのまま利用します。最近、GhosttyやWeztermというやつらが流行っているらしいですが、デフォルトが十分高機能な（気がする）のでKonsoleを使います。
+ターミナルエミュレータはKDE標準搭載のKonsoleをそのまま利用します。最近、GhosttyやWeztermというやつらが流行っているらしいですが、デフォルトのこれが十分高機能な（気がする）のでKonsoleを使います。
 
 ### Microsoft Edge
 ブラウザはMicrosoft Edgeをインストールします。なんとなくChromeは使いたくないが、Firefoxは非対応サイトがあるし...の結果、Edgeに落ち着きました。Chromeより機能も充実していて割と軽いのでおすすめです。
 
 ### Visual Studio Code
+エディタはVisual Studio Codeをインストールします。最近はCursorやAntigravity等のAIエディタが流行っているような気がしますが、そこはあえて
 
 ### mise
