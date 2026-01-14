@@ -806,7 +806,9 @@
       "GitHub Copilot",
       "AI"
     ],
-    "categories": [],
+    "categories": [
+      "AI"
+    ],
     "date": "2025-12-15",
     "draft": false
   },
