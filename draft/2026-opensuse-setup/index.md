@@ -5,36 +5,41 @@ categories: []
 date: '2026-01-31'
 draft: true
 ---
-開発環境現状確認という記事を書くのが流行っていそうな雰囲気だったので私も便乗します。
+開発環境現状確認という記事を書くのが流行っていそうな雰囲気だったので便乗していきます。
 
-## OS
-openSUSE TumbleweedというLinuxディストリビューションを使用しています。Windows11→Manjaro→Kubuntu→いろいろ→Ubuntuときて、結果的にopenSUSEに落ち着きました。
+## PCとOS
+PCは[ThinkPad T14 Gen6 ILL](https://www.sandyman.dev/posts/thinkpad-t14g6-review/)、OSはopenSUSE TumbleweedというLinuxディストリビューションを使用しています。Windows11→Manjaro→Kubuntu→いろいろ→Ubuntuときて、結果的にopenSUSEに落ち着きました。
 
 ## デスクトップ環境
 デスクトップ環境はKDE Plasma 6を使い続けています。KDEは動作も軽量で見た目も近代的で、もうWindowsを超えてるのではないか？というくらい完成度が高いなと感じています。また、KDE Connectというスマホとの連携機能がかなり優秀なのも良いです。
 
 ## ブートローダー
-デフォルトではGRUB2-BLSになっていますが、GRUB2-BLSではデュアルブートがうまくいかない（Windowsが検知されない）例が多く報告されているので、Systemd-bootを使っています。シンプルな感じで良いです。
+デフォルトではGRUB2-BLSになっていますが、GRUB2-BLSではデュアルブートがうまくいかない（Windowsが検知されない）例が多く報告されているので、Systemd-bootを使っています。今のところ問題なくデュアルブートができています。
 
 <!-- ## Wayland
 ログインの際に、セッションをX11からWaylandにしておきます。なんとなくWaylandのほうがウインドウの動きなどが軽快です。 -->
 
-## fcitx5-mozc
-日本語入力はデフォルトではibus-mozcが入っているのかな？と思いますが、Fcitx5のほうがWaylandとの相性がいいのでインストールし変更します。ただ、TumbleweedのFcitz5はなぜか5.1.13で更新が止まっていて、これがかなりのバクを含むバージョンなため、個人でビルドしインストールします。私は過去にビルドした5.1.14のものを使いまわしました。なかなかいい感じです。
+## 日本語入力
+日本語入力はデフォルトではibus-mozcが入っているのかな？と思いますが、Waylandとの相性がいいFcitx5を使用しています。ただ、TumbleweedのFcitz5はなぜか5.1.13で更新が止まっていて、これがかなりのバクを含むバージョンなため、個人でビルドしインストールしています。
 
-### Noto Sans CJK JP
-日本語フォントは安定のNoto Sans CJK JPをインストールし、KDEの設定から変更します。読みやすくて良いです。
+最近は音声入力にも興味があるのですが、精度が良いと評判のAqua VoiceがLinux非対応なのでどうしたものかと思っています。最悪Codexにでも作らせようかなという感じです。
 
-### Zsh & Starship
-シェルはZsh、そのカスタマイズにはStarshipを導入します。前にも書いたので詳しくは[この記事](https://www.sandyman.dev/posts/portable-ssd-ubuntu/)を見てください。
+## 日本語フォント
+日本語フォントはNoto Sans CJK JP、ターミナルのフォントはHack Nerd Font、VSCodeのフォントはConsolasにしています。まあ普通です。
 
-### Konsole
-ターミナルエミュレータはKDE標準搭載のKonsoleをそのまま利用します。最近、GhosttyやWeztermというやつらが流行っているらしいですが、デフォルトのこれが十分高機能な（気がする）のでKonsoleを使います。
+## シェル
+シェルはZsh、そのカスタマイズにはStarshipを導入しています。前にも書いたので詳しくは[この記事](https://www.sandyman.dev/posts/portable-ssd-ubuntu/)を見てください。
 
-### Microsoft Edge
-ブラウザはMicrosoft Edgeをインストールします。なんとなくChromeは使いたくないが、Firefoxは非対応サイトがあるし...の結果、Edgeに落ち着きました。Chromeより機能も充実していて割と軽いのでおすすめです。
+## ターミナルエミュレータ
+ターミナルエミュレータはKDE標準搭載のKonsoleをそのまま利用しています。最近はGhosttyやWeztermというやつらが流行っているらしいですが、デフォルトで十分高機能な気がするのでKonsoleのままにしています。
 
-### Visual Studio Code
-エディタはVisual Studio Codeをインストールします。最近はCursorやAntigravity等のAIエディタが流行っているような気がしますが、そこはあえて
+## ブラウザ
+ブラウザはMicrosoft Edgeを使っています。なんとなくChromeは使いたくないが、Firefoxはなんか違うなとなり、Edgeに落ち着きました。Chromeより機能も充実していて割と軽いのでおすすめです。
 
-### mise
+## エディタ
+エディタはずっとVisual Studio Codeを使っています。特に大きな不満もなく、便利なエディタだなーと思います。Neovimだったりのターミナル上で動くエディタへの憧れもあるのですが、カスタマイズが面倒そうなので手を出せていません。
+
+## バージョン管理
+言語やツールのバージョン管理にはmiseを使っています。この間まではnvmを使っていましたが、OSの再インストールを機にmiseを導入しました。Codex CLI等ツールもまとめて管理できるのが良いですね。最近よく聞くNixも面白そうではあるのですが、安定した環境を構築するまでが難しそうなのでまだ試せていません。そのうち試してみたいです。
+
+
