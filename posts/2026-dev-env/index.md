@@ -10,7 +10,7 @@ draft: false
 開発環境現状確認という記事を書くのが流行っていそうな雰囲気だったので便乗していきます。
 
 ## PCとOS
-PCは[ThinkPad T14 Gen6 ILL](https://www.sandyman.dev/posts/thinkpad-t14g6-review/)、OSはopenSUSE TumbleweedというLinuxディストリビューションを使用しています。Windows11→Manjaro→Kubuntu→いろいろ→Ubuntuときて、結果的にopenSUSEに落ち着きました。
+PCは[ThinkPad T14 Gen6 ILL](https://www.sandyman.dev/posts/thinkpad-t14g6-review/)、OSはopenSUSE TumbleweedというLinuxディストリビューションを使用しています。Windows11→Manjaro→Kubuntu→いろいろ→Ubuntuときて、結果的にopenSUSEに落ち着きました。個人的にですが、openSUSEは後述するKDEとの相性が最も良いディストリビューションだと思っています。
 
 ## デスクトップ環境
 KDE Plasma 6を使い続けています。KDEは動作も軽量で見た目もモダンで、もうWindowsを超えてるのではないか？というくらい完成度が高いなと感じています。また、KDE Connectというスマホとの連携機能がかなり優秀なのも良いです。
@@ -30,7 +30,7 @@ KDE Plasma 6を使い続けています。KDEは動作も軽量で見た目も�
 日本語フォントはNoto Sans CJK JP、ターミナルのフォントはHack Nerd Font、VSCodeのフォントはConsolasにしています。まあ普通です。
 
 ## シェル
-シェルはZsh、そのカスタマイズにはStarshipを導入しています。前にも書いたので詳しくは[この記事](https://www.sandyman.dev/posts/portable-ssd-ubuntu/)を見てください。
+シェルはZsh、そのカスタマイズにはStarshipを導入しています。前にも書いたので詳しくは[この記事](https://www.sandyman.dev/posts/portable-ssd-ubuntu/)を見てください。Zshのプラグインは補完など最低限のもののみを入れています。
 
 ## ターミナルエミュレータ
 KDE標準搭載のKonsoleをそのまま利用しています。最近はGhosttyやWeztermというやつらが流行っているらしいですが、デフォルトで十分高機能な気がするのでKonsoleのままにしています。
