@@ -18,5 +18,15 @@
     "categories": [],
     "date": "2025-12-25",
     "draft": true
+  },
+  {
+    "slug": "coding-ai",
+    "excerpt": "# 新しい記事",
+    "directory": "draft",
+    "title": "コーディングエージェント最高",
+    "tags": [],
+    "categories": [],
+    "date": "2026-01-30",
+    "draft": true
   }
 ]
