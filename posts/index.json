@@ -853,5 +853,20 @@
     "categories": [],
     "date": "2026-01-17",
     "draft": false
+  },
+  {
+    "slug": "cheap-ai-coding",
+    "excerpt": "Xをぼんやり眺めていると、Claude CodeやCodexに月200ドルを平気な顔でぶち込んでるやつをよく目にします。なんか「海外はもう進んでる。A...",
+    "directory": "posts",
+    "title": "月100ドルも払えない貧民のAIコーディング",
+    "tags": [
+      "AI",
+      "GitHub Copilot"
+    ],
+    "categories": [
+      "AI"
+    ],
+    "date": "2026-04-18",
+    "draft": false
   }
 ]
