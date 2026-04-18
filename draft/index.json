@@ -38,19 +38,5 @@
     "categories": [],
     "date": "2026-04-11",
     "draft": true
-  },
-  {
-    "slug": "cheap-ai-coding",
-    "excerpt": "Xをぼんやり眺めていると、Claude CodeやCodexに月200ドルを平気な顔してぶち込んでるやつをよく目にしますよね。なんか「海外はもう進んで...",
-    "directory": "draft",
-    "title": "月100ドルも払えない貧民のAIコーディング",
-    "tags": [
-      "AI"
-    ],
-    "categories": [
-      "AI"
-    ],
-    "date": "2026-04-24",
-    "draft": true
   }
 ]
