@@ -22,21 +22,5 @@
     "directory": "scraps",
     "date": "2024-04-28",
     "title": "2024年天皇賞・春の本気予想"
-  },
-  {
-    "slug": "ai-agent-coding-habits",
-    "excerpt": "AIエージェント（piのような）と一緒にコードを書くようになってから、いくつか習慣が変わった気がします。 1. 最初に「何をしたいか」を書く コードを書き始める...",
-    "directory": "scraps",
-    "title": "AIエージェントとコードを書くときに気をつけてること",
-    "tags": [
-      "AI",
-      "エージェント",
-      "コーディング"
-    ],
-    "categories": [
-      "memo"
-    ],
-    "date": "2026-06-20",
-    "draft": true
   }
 ]
