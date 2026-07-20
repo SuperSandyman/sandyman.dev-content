@@ -57,18 +57,19 @@
   },
   {
     "slug": "nixos-migration",
-    "excerpt": "今年に入ってから少しずつ準備していたんですが、とうとう開発環境をNixOSに移行しました。dotfilesを整理するついでに、構成を一から組み直したのでその話を...",
+    "excerpt": "先日書いた開発環境現状確認 2026では、openSUSE Tumbleweed + KDE Plasma 6 + mise + VSCodeという構成を紹介し...",
     "directory": "draft",
-    "title": "NixOSに開発環境を移行した",
+    "title": "開発環境をNixOSに移行した",
     "tags": [
       "NixOS",
       "dotfiles",
-      "Nix"
+      "Nix",
+      "移行"
     ],
     "categories": [
       "tech"
     ],
-    "date": "2026-07-19",
+    "date": "2026-07-20",
     "draft": true
   }
 ]
