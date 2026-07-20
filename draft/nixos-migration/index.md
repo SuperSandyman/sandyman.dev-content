@@ -1,26 +1,47 @@
 ---
-title: "NixOSに開発環境を移行した"
+title: "開発環境をNixOSに移行した"
 tags: 
   - "NixOS"
   - "dotfiles"
   - "Nix"
+  - "移行"
 categories: 
   - "tech"
-date: "2026-07-19"
+date: "2026-07-20"
 draft: true
 ---
 
-今年に入ってから少しずつ準備していたんですが、とうとう開発環境をNixOSに移行しました。dotfilesを整理するついでに、構成を一から組み直したのでその話を書きます。
+先日書いた[開発環境現状確認 2026](/posts/2026-dev-env/)では、openSUSE Tumbleweed + KDE Plasma 6 + mise + VSCodeという構成を紹介していました。あれから半年ほど経って、とうとうNixOSに開発環境を移行しました。元の環境から何が変わって、何を諦めて、何を手に入れたのかを書きます。
 
-## 動機
+## 移行前の環境のおさらい
 
-前々から「設定ファイルを宣言的に管理したい」「環境再現性を高めたい」と思っていました。Homebrew + mise + 各種dotfilesスクリプトでもそれなりに回せてはいたんですが、新マシンをセットアップするたびに「あれ、これ入れたっけ」になったり、バージョン差異でハマったりするのが地味にストレスでした。
+2026-dev-env記事の段階では、こんな構成でした。
 
-NixOSはOSの構成からユーザーシェルの設定、開発ツールまで**全部Nix式で書ける**ところが魅力です。思い切って移行することにしました。
+- **OS**: openSUSE Tumbleweed（ローリングリリース）
+- **デスクトップ環境**: KDE Plasma 6
+- **ターミナル**: Konsole
+- **シェル**: Zsh + Starship
+- **エディタ**: VSCode（メイン）、Neovimには手を出せず
+- **ブラウザ**: Microsoft Edge
+- **開発ツール管理**: mise（nvm, fnm等の代替）
+- **日本語入力**: Fcitx5（Tumbleweedのパッケージが古くて自前ビルド）
+- **フォント**: Noto Sans CJK JP / Hack Nerd Font / Consolas
 
-## 全体構成
+この状態で特に大きな不満はなかったんですが、いくつか気になる点が積み重なっていました。
 
-今回のdotfilesは、更新目的の異なる2つのflakeで構成しています。
+### 移行を決意した理由
+
+**再現性への不安**: openSUSE Tumbleweedはローリングリリースなので、アップデートのたびに「動かなくなるリスク」がありました。実際、Bluetoothが突然死んだり、Fcitx5のバージョンが古くてハマったり（その時の記事は[こちら](/posts/fix-be201-bluetooth/)）と、地味なトラブルが年に何度かありました。
+
+**設定の散らばり**: Konsoleの設定、シェルのalias、miseのconfig、VSCodeのsettings.json、それぞれが別々の管理下にありました。バックアップはdotfilesリポジトリで一応まとめてはいたものの、「あれ、この設定どこに書いてあったっけ」になることがしばしば。
+
+**miseの限界**: 言語ランタイムの管理はmiseで十分でしたが、システム全体のツール（NeovimとかLSP群とか）まで管理範囲を広げようとすると、どうしてもHomebrewなど他のパッケージマネージャと併用しないといけませんでした。そろそろ全部Nix式で管理したくなった、というのが正直なところです。
+
+## NixOSの構成
+
+というわけで、移行後の現在の構成です。
+
+### 全体構成
 
 システム側と開発環境側でflakeを分けることで、「OSは固定したまま開発ツールだけ更新したい」というユースケースを満たせるようにしています。
 
@@ -40,142 +61,65 @@ profiles/
     └── packages/
 ```
 
-ハードウェア構成としては、Intel CPU + KDE Plasma 6 + Waylandの組み合わせです。GPUは特にゲーム用途ではないので、シンプルにIntel内蔵グラフィクスで運用しています。
+ハードウェア構成は以前と変わらず、Intel CPU + KDE Plasma 6 + Waylandの組み合わせです。
 
-## NixOSの設定
+### NixOSの設定
 
-### ベース（base.nix）
+**ベース（base.nix）**: ブートローダーはLimine（EFI）に変更しました。Tumbleweed時代はsystemd-bootを使っていましたが、NixOSに乗り換えるにあたりLimineの世代管理のしやすさを評価して選んでいます。Tailscaleも有効化していて、これは以前から使っていたものそのままです。
 
-ベース設定では、以下のような基本的なシステム構成を定義しています。
+**デスクトップ（desktop.nix）**: ディスプレイマネージャーはSDDM（Wayland）で、KDE Plasma 6は継続です。日本語入力は引き続きFcitx5 + mozcですが、Tumbleweedで苦労した「パッケージが古い問題」はなくなりました。sessionVariablesでGTK_IM_MODULEやQT_IM_MODULEをまとめて設定するノウハウは、Tumbleweed時代に培ったものが活きています。
 
-- **ブートローダー**: Limine (EFI)
-- **カーネル**: Linux latest
-- **ネットワーク**: NetworkManager
-- **タイムゾーン**: Asia/Tokyo、ロケールは ja_JP.UTF-8
-- **Nix機能**: flakes + nix-command の実験的機能を有効化
-- **ユーザー**: sandyman（zsh、networkmanager/wheel groups）
-- **Tailscale**: 有効化
+**ストレージ管理（nix-storage.nix）**: NixOS特有の課題である `/nix/store` の肥大化対策として、週次GC（14日より前の世代を削除）、空き容量しきい値5GB以下で自動GC起動などを設定しています。
 
-Nixの設定ではflakeのlockファイルから常に再現可能になるよう、`keep-derivations`や`keep-outputs`はfalseにしています。代わりに週次GCで14日より古い世代を削除する運用です。
+### 移行前後での構成比較
 
-### デスクトップ（desktop.nix）
+変わったところと変わらなかったところをまとめます。
 
-デスクトップは以下のような構成です。
+| 項目 | 移行前（openSUSE Tumbleweed） | 移行後（NixOS） |
+|------|------|------|
+| デスクトップ環境 | KDE Plasma 6 | KDE Plasma 6（変わらず） |
+| シェル | Zsh + Starship | Zsh + Starship（変わらず） |
+| ターミナル | Konsole | **Ghostty**（変更） |
+| エディタ | VSCode | **VSCode + Neovim**（Neovim導入） |
+| ブラウザ | Microsoft Edge | **Firefox + Microsoft Edge**（Firefox追加） |
+| 開発ツール管理 | mise | **Nix profile**（変更） |
+| 日本語入力 | Fcitx5 + mozc | Fcitx5 + mozc（変わらず） |
+| フォント | Hack Nerd Font | Hack Nerd Font（変わらず） |
+| 言語ランタイム | mise管理 | Nix管理（Node.js, Elixir, Rust等） |
+| AI agent | Codex + Copilot | Codex + Copilot + OpenCode + Herdr（拡充） |
 
-- **ディスプレイマネージャー**: SDDM (Wayland)
-- **デスクトップ環境**: KDE Plasma 6
-- **サウンド**: PipeWire（ALSA, PulseAudio互換）
-- **日本語入力**: fcitx5 + mozc
-- **ロックスクリーン**: qylock（テーマは pixel-night-city）
-- **ブラウザ**: Firefox + Microsoft Edge
+KDE Plasma 6やFcitx5 + mozcなど、気に入っている部分はそのまま移行しています。一方で、KonsoleからGhosttyに変えたり、VSCodeに加えてNeovimの設定を本格的に始めたりと、NixOSへの移行を機に思い切って変えたものもあります。
 
-日本語入力周りはfcitx5の環境変数をあちこちに設定しないと一部アプリで効かないので、`sessionVariables`でGTK_IM_MODULE、QT_IM_MODULE、XMODIFIERSなどをまとめて設定しています。これは試行錯誤の末にたどり着いた形ですね。
+### 一番大きかった変化：miseからNix profileへ
 
-### ストレージ管理（nix-storage.nix）
+以前はmiseで言語ランタイムを一元管理していました。mise自体は悪くなかったんですが、「Neovimのプラグイン管理はMason」「システムツールはHomebrew」という風に管理が分散してしまうのが気になっていました。
 
-NixOSを使っていると避けて通れないのが `/nix/store` の肥大化問題です。以下の対策を入れています。
+今回の移行で、言語ランタイムもLSPもフォーマッターも、**全部Nix式で統一**することにしました。Node.js（pnpm）、Elixir/Erlang、Rust/Cargo、GCC、typescript-language-server、elixir-ls、rust-analyzer...これらは全て `profiles/development/` のflakeで管理しています。
 
-- **自動GC**: 週次で14日より前の世代を削除
-- **store最適化**: auto-optimise-store で重複ファイルを自動でハードリンク
-- **空き容量しきい値**: 5GB以下でGCを起動、15GB超で停止
-- **ブート世代制限**: systemd-bootの最大世代を10に制限
-
-ちなみにLimineの方は `maxGenerations = 5` とさらに厳しめにしています。
-
-## Home Managerの設定
-
-NixOSのmoduleとしてHome Managerを統合しており、ユーザーランドの設定は `home.nix` に集約しています。
-
-### シェル環境
-
-普段使いはzsh、緊急用にbashも有効にしています。Aliasは全部モダンな置き換えに変えました。
-
-```nix
-ls = "eza --icons --group-directories-first";
-ll = "eza --icons -la --group-directories-first";
-grep = "rg";
-cat = "bat --paging=never";
-vi = "nvim";
-```
-
-プロンプトは Starship でカスタマイズして、カラフルなセグメント区切りに加えて、言語ランタイムのバージョン表示やDockerコンテキストがパッと見えるようにしています。
-
-### インストールするツール
-
-Home Manager側で入れるのは、あくまでシステムに密接に関わるものだけに絞っています。
-
-- **ターミナル**: Ghostty (透過/Breezeテーマ、Hack Nerd Font)
-- **フォント**: Hack Nerd Font、Inconsolata
-- **ファイラ代替**: eza（テーマカスタム）+ zoxide（cd置き換え）
-- **エディタ設定**: Neovimの設定ファイル群
-
-Neovimの設定やGhosttyの設定は `xdg.configFile` で各ディレクトリに配置しています。init.luaはlazy.nvimでプラグインを管理していて、`lazy-lock.json`はNeovim側から書き変わるので、初回だけbootstrapで配置して以降は触らないようにしています。
-
-### Codexの設定ファイル
-
-AI agent周りもNix管理下に置いています。Codexのカスタムスキルはhome.fileで各スキルディレクトリを展開。ただしCodexの認証情報や履歴、セッションキャッシュは管理対象外です。
-
-設定ファイル（config.toml）は**初回だけbootstrap**で配置するようにしていて、Codex Desktopから後で書き換えられても上書きしない仕組みです。このへんはHome Managerの `backupFileExtension` を設定して、既存ファイルを守るようにしています。
-
-```nix
-home.activation.bootstrapCodexConfig = lib.hm.dag.entryAfter [ "writeBoundary" ] ''
-  if [[ ! -e "$HOME/.codex/config.toml" ]]; then
-    run mkdir -p "$HOME/.codex"
-    run install -m 0600 \
-      ${./dot_codex/private_config.toml} \
-      "$HOME/.codex/config.toml"
-  fi
-'';
-```
-
-## 開発環境プロファイル
-
-### なぜNixOSとは別のflakeにしたか
-
-OSの設定と開発ツールの更新頻度が違うからです。Node.jsやRustのマイナーアップデート、新しいLSPの追加などをいちいち `nixos-rebuild switch` したくないですよね。開発環境は独立したflakeとして、**nix profile** で管理しています。
-
-### 中身
-
-主な中身は以下のような感じです。
-
-- **エディタ**: Neovim、VSCode
-- **言語ランタイム**: Node.js（pnpm）、Elixir/Erlang、Rust/Cargo、GCC
-- **LSP/フォーマッター**: typescript-language-server、elixir-ls、nil（Nix）、rust-analyzer、lua-language-server、nixfmt、prettier、stylua など
-- **開発CLI**: ripgrep、fd、gh（GitHub CLI）、tree-sitter、wl-clipboard
-- **AI agent**: Codex、GitHub Copilot CLI、OpenCode、Pi、Herdr
-- **自作パッケージ**: hunkdiff、portless
-
-注目ポイントは **miseとMasonを使わない** ことにした点です。ランタイムやLSPのインストール管理をNixに一本化することで、バージョンの管理場所が散らばらないようにしています。
-
-### 更新方法
-
-開発環境の更新は以下のコマンドだけです。
+更新は次のコマンド一つで完了します。
 
 ```sh
 nix flake update --flake ./profiles/development
 nix profile upgrade development
 ```
 
-flake.lockを更新して `nix profile upgrade` するだけ。システム再起動も不要です。
+以前miseを使っていた頃は `mise upgrade` していましたが、それとあまり変わらない手間で、しかもロックファイルでバージョンが固定される安心感があります。
 
-逆にシステム側を更新したいときは、
+### 新しく導入したもの
 
-```sh
-nix flake update
-sudo nixos-rebuild switch --flake path:$PWD#nixos
-```
+- **Ghostty**: Konsoleから乗り換え。透過/Breezeテーマで設定はNix管理下に。
+- **Neovim**: 以前は「カスタマイズが面倒」と避けていましたが、設定をNixで管理できるならやってみようと導入。lazy.nvim + lazy-lock.json構成。
+- **Firefox**: Edgeに加えてFirefoxも導入。NixOSでは設定も宣言的に管理できます。
+- **AI agent周りの充実**: Codexに加えてOpenCode、HerdrなどもNix管理下に。
 
-両方まとめて更新したいときはユーティリティも用意していて、
+### 移行には至らなかったもの
 
-```sh
-nix run path:.#update-all
-```
-
-これで両方のflake.lockを更新 + 開発環境プロファイルのupgradeまでやってくれます。
+- **VSCode**: やっぱり快適なので引き続きメインエディタです。Neovimはサブとして育てていく予定。
+- **Microsoft Edge**: メインブラウザはEdgeのまま。Firefoxは検証用。
 
 ## 新規環境への導入
 
-このdotfilesを使って新規NixOSマシンをセットアップする場合は3ステップです。
+このdotfilesを使って新規NixOSマシンをセットアップする手順も用意しています。
 
 ```sh
 git clone git@github.com:SuperSandyman/dotfiles.git ~/develop/dotfiles
@@ -185,34 +129,30 @@ cd ~/develop/dotfiles
 nix profile add path:$PWD/profiles/development#default
 
 # NixOS + Home Manager を適用
-sudo nixos-rebuild test --flake path:$PWD#nixos   # まず試す
-sudo nixos-rebuild switch --flake path:$PWD#nixos  # 確定
+sudo nixos-rebuild test --flake path:$PWD#nixos
+sudo nixos-rebuild switch --flake path:$PWD#nixos
 ```
 
-最初に `test` でデスクトップやネットワークが問題なく動くか確認してから `switch` するのが安心です。Home ManagerもNixOS moduleとして統合されているので、`switch` 一発でホーム設定まで反映されます。
+以前のopenSUSE Tumbleweed時代には、OSのクリーンインストール後に「あれ、このツール入れてたっけ」と確認する手間が必ず発生していました。NixOSならflakeをcloneしてbuildするだけなので、そういうストレスはなくなりそうです。
 
 ## 移行してみての感想
 
-### よかったところ
+### 変わらなかったこと、変わったこと
 
-**再現性が高い** のは想像通りでした。flake.lockで全てのバージョンが固定されるので、「この前動いたのに...」が激減しました。
+半年ほど前の記事で「Nixは面白そうではあるけど、安定した環境を構築するまでが難しそう」と書いていました。実際、最初の壁はやはり高かったです。Nix言語の学習、ドキュメントの読み解き方、エラーメッセージの意味を理解するまでにそれなりに時間がかかりました。
 
-**設定が一箇所に集まる** のも地味に大きいです。ターミナルの設定、シェルのalias、フォント、IMEの設定が全部Nix式で書かれていて、バラバラに管理していた頃と比べると見通しが格段に良くなりました。
+ただ、一度構成を作ってしまえば、その再現性と一貫性は想像以上でした。「あの時の環境、再現できる？」がflake.lock一つで完結するのは気持ちがいいです。
 
-**GCの自動化** は `/nix/store` の肥大化に対する精神衛生上とても良いです。昔Arch Linuxでpacmanのキャッシュを手動で掃除していた頃を思い出すと隔世の感があります。
+再現性以外だと、**設定が一箇所に集まる**のが地味に大きいです。Tumbleweed時代はKonsoleの設定はKonsoleのGUIで、シェルのaliasは.zshrcで、フォントの設定は各アプリごとに...と分散していましたが、今はNix式で全部を一箇所で見渡せます。
 
-### ハマったところ
+### まだ改善したいところ
 
-**日本語入力の設定** はやはり面倒でした。fcitx5自体の設定は簡単なんですが、GTK/QtアプリごとにIM moduleの環境変数を適切に設定しないと一部で効かない現象がありました。特にElectronアプリ（VSCode、Edge）周りは地味に試行錯誤しています。
-
-**Limine vs systemd-boot** の選択も少し迷いました。結局Limineをメインにしつつ、systemd-bootも世代管理用に併用する形に落ち着いています。
-
-**開発環境の分離** は正解だったんですが、依存関係のトレースが少し面倒です。例えば `profiles/development/flake.nix` から参照している自作パッケージ（hunkdiff、portless）を変更した場合、開発環境プロファイルをre-buildし直す必要があります。これはまあ仕方ないですね。
+- **Neovimの設定**: まだ入門したばかりなので、もう少し育てていきたい。
+- **Ghosttyの設定**: 乗り換えたばかりでまだ試行錯誤中。
+- **CIでのflakeチェック**: まだ整備できていないので、push時にflake checkが走るようにしたい。
 
 ## まとめ
 
-NixOSへの移行は、正直なところ最初の壁は高いです。Nix言語の学習コスト、ドキュメントの豊富さ（nixpkgsは膨大ですが取っ掛かりが難しい）、エラーメッセージの読みにくさ、など乗り越えるべきものはいくつかあります。
+ということで、[開発環境現状確認 2026](/posts/2026-dev-env/)で紹介したopenSUSE Tumbleweed環境からNixOSに移行した話でした。
 
-ただ、一度構成を作ってしまえば、その再現性と一貫性は破壊的に便利です。「再インストール」が「flakeをcloneしてbuild」に変わるのは、体験としてかなり大きな差があります。
-
-今回の構成はまだ完全に枯れたとは言えないので、これからもちょこちょこ改善していくつもりです。何か面白い知見があればまた書きます。
+まだ完成形とは言えず、これからもちょこちょこ改善していくつもりです。何か面白い知見があればまた書きます。
